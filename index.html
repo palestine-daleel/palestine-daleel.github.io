@@ -2406,9 +2406,10 @@
                                   displayedItems[k].item + ' --------------------- ' + displayedItems[k].list + '</div>';
                 }
                 searchResult.innerHTML = resultText;
+				searchResult.style.backgroundColor = 'transparent';
             } else {
                 searchResult.innerHTML = 'لا توجد نتائج';
-                searchResult.style.backgroundColor = 'transparent';
+                searchResult.style.backgroundColor = 'black';
             }
 
             updatePaginationInfo();
