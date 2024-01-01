@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دليل المقاطعة</title>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend with Circle Dots</title>
+	
+	
     <style>
         body {
             display: flex;
@@ -67,17 +73,44 @@
         #list3-result {
             background-color: blue;
         }
+		
+		        body {
+            font-family: 'Arial Rounded MT Bold', sans-serif;
+        }
+
+        #legend {
+            font-size: 16px;
+        }
+
+        #legend p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .red { background-color: red; }
+        .green { background-color: green; }
+        .blue { background-color: blue; }
+		
     </style>
+	
 </head>
 <body>
     <h1>دليل المقاطعة</h1>
 	
     <img id="headerImage" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt="Header Image">
 	
-    <div id="downloadLink">
-        <a href="https://drive.google.com/file/d/1jnvt_RI7NVPc8X8bEIZyfl4PLCSSeVU5/view?usp=sharing" target="_blank">تحميل القائمة الكاملة</a>
-    </div>
 	
+	<div class="html_button btn-left">
+	<a href="https://drive.google.com/file/d/1jnvt_RI7NVPc8X8bEIZyfl4PLCSSeVU5/view?usp=sharing" target="_blank"><button type="button">تحميل القائمة الكاملة</button></a>
+	</div>
 	    <h1></h1>
 
 		
@@ -2345,11 +2378,11 @@
     </ul> 
 
 
-    <div id="legend">
-        <p><span style="background-color: red;">&nbsp;&nbsp;&nbsp;</span> list1 مقاطعة</p>
-        <p><span style="background-color: green;">&nbsp;&nbsp;&nbsp;</span>list2 لا يدعم</p>
-        <p><span style="background-color: blue;">&nbsp;&nbsp;&nbsp;</span>list3 محايد\أقل عدائية</p>
-    </div>
+<div id="legend">
+    <p><span class="dot red"></span> list1 ................... مقاطعة</p>
+    <p><span class="dot green"></span> list2 ................... لا يدعم</p>
+    <p><span class="dot blue"></span> list3 ........ محايد - أقل عدائية</p>
+</div>
 
 
 	
